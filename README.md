@@ -105,9 +105,11 @@ json
 *Sample Request:*
 json
 {
+    "id": "1"
   "title": "My First Blog",
   "content": "This is the content of my first blog post.",
-  "authorId": "uuid-of-user"
+  "userId": "1",
+  "isDeleted": false
 }
 
 
