@@ -10,7 +10,7 @@ A basic yet powerful RESTful API built with *Express.js, **Prisma ORM, and **Pos
 - *Prisma ORM* – Type-safe database ORM
 - *PostgreSQL* – Relational database
 - *dotenv* – To manage environment variables
-- *Render / Railway* – For deployment
+- *Render* – For deployment
 
 
 ## Data Models
@@ -83,13 +83,14 @@ authorId: string (foreign key to User)
 #### POST /users
 - Creates a new user  
 *Sample Request:*
-json
+```json
 {
   "firstName": "John",
   "lastName": "Doe",
   "emailAddress": "john@example.com",
   "username": "johndoe"
 }
+```
 
 
 ### Posts
@@ -103,7 +104,7 @@ json
 #### POST /posts
 - Creates a new post  
 *Sample Request:*
-json
+```json
 {
     "id": "1"
   "title": "My First Blog",
@@ -111,17 +112,17 @@ json
   "userId": "1",
   "isDeleted": false
 }
-
+```
 
 #### PUT /posts/:id
 - Updates an existing post  
 *Sample Request:*
-json
+```json
 {
   "title": "Updated Title",
   "content": "Updated content."
 }
-
+```
 
 #### DELETE /posts/:id
 - Soft deletes a post (marks isDeleted as true)
